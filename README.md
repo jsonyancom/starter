@@ -30,8 +30,8 @@ Requests to `/api/*` go to the Worker. Every other path serves the React app, an
 
 1. Sign in to https://jsonyan.com and create a project, or open an existing one.
 2. Open the project, choose **Clients**, then **Create client**.
-   - Leave **Limit available APIs** off to allow every v1 method.
-   - To restrict the client, turn it on and select the methods it may call. An app that runs workflows needs `v1.startWorkflowInstance` and `v1.resumeWorkflowInstance`, plus every method its workflow actions call, such as `v1.listRows` or `v1.createRows`. A client that also sets up tables and workflows needs the methods that create them.
+   - Leave **Limit available APIs** off to allow every v0 method.
+   - To restrict the client, turn it on and select the methods it may call. An app that runs workflows needs `v0.startWorkflowInstance` and `v0.resumeWorkflowInstance`, plus every method its workflow actions call, such as `v0.listRows` or `v0.createRows`. A client that also sets up tables and workflows needs the methods that create them.
 3. Choose **Copy .env**. **The secret is shown only once**, so paste it right away (next step).
 
 ## 2. Local development
